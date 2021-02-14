@@ -2,6 +2,11 @@
     "name": "simplyrouter/getrouterphp",
     "description": "Simply GET router in PHP",
     "type": "project",
+    "authors": [
+        {
+            "name": "damixiorek"
+        }
+    ],
     "license": "1.0",
     "require": {}
 }

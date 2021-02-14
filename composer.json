@@ -1,0 +1,7 @@
+{
+    "name": "simplyrouter/getrouterphp",
+    "description": "Simply GET router in PHP",
+    "type": "project",
+    "license": "1.0",
+    "require": {}
+}

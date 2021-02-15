@@ -16,10 +16,11 @@
     <nav>
 
         <ul>
-            <li> <a href="">Run action no 1</a> </li>
-            <li> <a href="">Run action no 2</a> </li>
-            <li> <a href="">Run action no 3</a> </li>
-            <li> <a href="">Run action no 4</a> </li>
+            <li> <a href="/">Index</a> </li>
+            <li> <a href="/?action=makenoise">Make Noise</a> </li>
+            <li> <a href="/?action=workhardly">Work Hardly</a> </li>
+            <li> <a href="/?action=takebreath">Take Breath</a> </li>
+            <li> <a href="/?action=gosleep">Go Sleep</a> </li>
         </ul>
 
     </nav>

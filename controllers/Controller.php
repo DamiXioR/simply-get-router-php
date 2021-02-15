@@ -7,7 +7,7 @@ namespace SimplyRouter;
     class Controller {
 
         public function run(){
-            echo "working\n";
+            include_once ROOT_DIRECTORY."/../views/mainView.php";
         }
 
     };

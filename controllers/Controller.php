@@ -19,6 +19,7 @@ namespace SimplyRouter;
 
             if(!method_exists($this, $action)){
                 $this->error404();
+                exit;
             }
 
             $this->$action();

@@ -15,4 +15,8 @@ namespace SimplyRouter;
             $this->post = $post;
             $this->server = $server;
         }
+
+        public function action() {
+            return $this->get['action'] ?? 'index';
+        }
     }

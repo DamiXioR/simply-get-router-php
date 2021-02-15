@@ -7,14 +7,44 @@ namespace SimplyRouter;
     class Controller {
 
         private Request $request;
+        private View $view;
 
         public function __construct(Request $request){
             $this->request = $request;
+            $this->view = new View();
         }
 
         public function run(){
-            
-            include_once ROOT_DIRECTORY."/../views/mainView.php";
+            $action = $this->request->action();
+
+            if(!method_exists($this, $action)){
+                $this->error404();
+            }
+
+            $this->$action();
         }
 
+        public function index(){
+            $this->view->showRequestedView('index');
+        }
+
+        public function makeNoise(){
+            $this->view->showRequestedView('makeNoise');
+        }
+
+        public function workHardly(){
+            $this->view->showRequestedView('workHardly');
+        }
+
+        public function takeBreath(){
+            $this->view->showRequestedView('takeBreath');
+        }
+
+        public function goSleep(){
+            $this->view->showRequestedView('goSleep');
+        }
+
+        public function error404(){
+            $this->view->showRequestedView('e404');
+        }
     };

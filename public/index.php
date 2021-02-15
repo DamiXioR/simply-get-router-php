@@ -8,6 +8,6 @@
 
     $request = new SimplyRouter\Request($_GET, $_POST, $_SERVER);
 
-    $controller = new SimplyRouter\Controller();
+    $controller = new SimplyRouter\Controller($request);
     $controller->run();
     

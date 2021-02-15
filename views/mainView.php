@@ -26,7 +26,9 @@
     </nav>
         
     <?php
-        require_once ROOT_DIRECTORY."/../views/".$requestedPage.".php";
+        if($requestedPage != "index"){
+            require_once ROOT_DIRECTORY."/../views/".$requestedPage.".php";
+        }
     ?>
 
 </body>

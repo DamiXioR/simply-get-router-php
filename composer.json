@@ -7,6 +7,11 @@
             "name": "damixiorek"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "SimplyRouter\\": "controllers/"
+        }
+    },
     "license": "1.0",
     "require": {}
 }

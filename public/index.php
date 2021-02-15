@@ -1,4 +1,8 @@
 <?php
+    include_once "../vendor/autoload.php";
 
     const ROOT_DIRECTORY = __DIR__;
-    include_once ROOT_DIRECTORY."/../views/mainView.php";
+
+    $controller = new SimplyRouter\Controller();
+    $controller->run();
+    

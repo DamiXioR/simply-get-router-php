@@ -9,7 +9,10 @@
     ],
     "autoload": {
         "psr-4": {
-            "SimplyRouter\\": "controllers/"
+            "SimplyRouter\\":[
+                "controllers/",
+                "src/"
+            ]
         }
     },
     "license": "1.0",
